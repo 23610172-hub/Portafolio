@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#home">JM</a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="nav" id="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section hero reveal">
+        <p class="eyebrow">Full-stack developer</p>
+        <h1>Building fast and elegant web products.</h1>
+        <p>
+          I create performant digital experiences with clean architecture,
+          responsive interfaces and product-focused engineering.
+        </p>
+        <a class="btn" href="#projects">View projects</a>
+      </section>
+
+      <section id="about" class="section reveal">
+        <h2>About</h2>
+        <p>
+          I specialize in JavaScript applications, API design and scalable
+          frontend systems with a strong focus on UX and maintainability.
+        </p>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="card">
+            <h3>Realtime Analytics Dashboard</h3>
+            <p>Live metrics platform with role-based access and streaming charts.</p>
+          </article>
+          <article class="card">
+            <h3>Headless Commerce Toolkit</h3>
+            <p>Composable storefront modules and checkout optimization features.</p>
+          </article>
+          <article class="card">
+            <h3>Mobile Booking App API</h3>
+            <p>Secure REST backend with payment integration and queue handling.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <h2>Contact</h2>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send message</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
